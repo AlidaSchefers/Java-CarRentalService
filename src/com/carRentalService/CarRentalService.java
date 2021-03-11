@@ -9,7 +9,7 @@ public class CarRentalService {
             AvailabilityReport.printAvailableCars(availableCars);
             Console.readInput(availableCars);
         }
-        System.out.printf("All cars are currently being rented.");
+        System.out.print("No cars are currently available.");
     }
 
 }
