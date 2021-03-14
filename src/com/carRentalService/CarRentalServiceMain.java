@@ -2,20 +2,18 @@ package com.carRentalService;
 
 import java.util.ArrayList;
 
-public class CarRentalService {
+public class CarRentalServiceMain {
     public static void main(String[] args) {
-        makeACar();
+        System.out.println("Welcome to Java Car Rentals!");
+        //start the loop! while(true).
+        //then can enter one of two loops: rent or return. when want to return to main stage, use break to leave the loop!
+
         ArrayList<String> availableCars = AvailableCars.getAvailableCars();
         while(availableCars.size() != 0) {
             AvailabilityReport.printAvailableCars(availableCars);
-            Console.readInput(availableCars);
+            Console.readCarSelection(availableCars);
         }
         System.out.print("No cars are currently available.");
     }
 
-    public static void makeACar() {
-        Car car1 = new Car(false, "Name1");
-        car1.setRenter(" ");
-        System.out.println(car1.getRenter());
-    }
 }
