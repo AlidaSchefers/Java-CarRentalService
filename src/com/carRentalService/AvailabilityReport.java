@@ -4,19 +4,17 @@ import java.util.ArrayList;
 
 public class AvailabilityReport {
 
-    static void printAvailableCars(ArrayList<String> availableCars) {
+    static void printAvailableCarsStr(ArrayList<String> availableCars) { //overloading results in an error "both methods have same erasure"
         System.out.println("Available Cars:");
         for (int i = 0; i < availableCars.size(); i++) {
             System.out.println((i+1)+") "+ availableCars.get(i));
         }
-        System.out.print("Selection: ");
     }
 
-    static void printAvailableCarsObj(ArrayList<Object> availableCars) {
+    static void printAvailableCars(ArrayList<Car> availableCars) {
         System.out.println("Available Cars:");
         for (int i = 0; i < availableCars.size(); i++) {
-            System.out.println((i+1)+") "+ availableCars.get(i)); //must change to fit with object elements in the array
+            System.out.println((i+1)+") "+ availableCars.get(i).getModel()); //must change to fit with object elements in the array
         }
-        System.out.print("Selection: ");
     }
 }
