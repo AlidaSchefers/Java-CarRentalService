@@ -1,4 +1,4 @@
-package com.carRentalService.Returning;
+package com.carRentalService;
 
 public class ReturnSequence {
 }
