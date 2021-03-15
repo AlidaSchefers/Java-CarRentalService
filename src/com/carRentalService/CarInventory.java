@@ -5,8 +5,8 @@ import java.util.ArrayList;
 public class CarInventory {
 //    private static String[] carModelsArr = new String[]{"Honda", "Chevy", "Toyota", "Hyundai", "BMW"};
 
-    public ArrayList<Object> giveCarInventory() {
-        ArrayList<Object> carInventoryArr = new ArrayList<Object>();
+    static ArrayList<Car> getCarInventory() {
+        ArrayList<Car> carInventoryArr = new ArrayList<Car>();
 
         Car car001 = new Car("Honda", true);
         carInventoryArr.add(car001);

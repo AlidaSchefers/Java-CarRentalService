@@ -5,6 +5,7 @@ import java.util.ArrayList;
 public class CarRentalServiceMain {
     public static void main(String[] args) {
         System.out.println("Welcome to Java Car Rentals!");
+
         RentSequence.runRentSequence(); //the RENT loop
         //start the loop! while(true).
         //then can enter one of two loops: rent or return. when want to return to main stage, use break to leave the loop!

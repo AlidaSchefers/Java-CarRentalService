@@ -11,7 +11,7 @@ public class AvailabilityReport {
         }
     }
 
-    static void printAvailableCars(ArrayList<Car> availableCars) {
+    static void printAvailableCarsCar(ArrayList<Car> availableCars) {
         System.out.println("Available Cars:");
         for (int i = 0; i < availableCars.size(); i++) {
             System.out.println((i+1)+") "+ availableCars.get(i).getModel()); //must change to fit with object elements in the array
