@@ -1,20 +1,28 @@
 package com.carRentalService;
 
 public class Car {
+    private String carID;
     private String model;
     private boolean isAvailable;
     private String renter;
 
-    public Car(String model, boolean isAvailable) {
-        this(model, isAvailable, "");
+    public Car(String carID, String model, boolean isAvailable) {
+        this(carID, model, isAvailable, "");
     }
 
-    public Car(String model, boolean isAvailable, String renter) {
+    public Car(String carID, String model, boolean isAvailable, String renter) {
         setModel(model);
         setAvailability(isAvailable);
         setRenter(renter);
     }
+
+//    @Override
+//    public String toString() {}
+
     //setters
+    public void setCarID(String carID) {
+        this.carID = carID;
+    }
     public void setModel(String model) {
         this.model = model;
     }
@@ -25,6 +33,9 @@ public class Car {
         this.renter = renter;
     }
     //getters
+    public String getCarID() {
+        return carID;
+    }
     public String getModel() {
         return model;
     }
@@ -34,5 +45,4 @@ public class Car {
     public boolean getAvailability() {
         return isAvailable;
     }
-
 }
