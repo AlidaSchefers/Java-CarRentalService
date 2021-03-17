@@ -5,9 +5,9 @@ import java.util.ArrayList;
 public class CarInventory {
 //    private static String[] carModelsArr = new String[]{"Honda", "Chevy", "Toyota", "Hyundai", "BMW"};
 
-    static ArrayList<Car> getCarInventory() {
-        ArrayList<Car> carInventoryArr = new ArrayList<Car>();
+    static ArrayList<Car> carInventoryArr = new ArrayList<Car>();
 
+    static public void initializeCarInventory() {
         Car car001 = new Car("car001","Honda", false);
         carInventoryArr.add(car001);
 
@@ -22,7 +22,9 @@ public class CarInventory {
 
         Car car005 = new Car("car005","BMW", true);
         carInventoryArr.add(car005);
+    }
 
+    static ArrayList<Car> getCarInventory() {
         return carInventoryArr;
     }
 }
