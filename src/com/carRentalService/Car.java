@@ -11,6 +11,7 @@ public class Car {
     }
 
     public Car(String carID, String model, boolean isAvailable, String renter) {
+        setCarID(carID);
         setModel(model);
         setAvailability(isAvailable);
         setRenter(renter);
