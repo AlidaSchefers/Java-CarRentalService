@@ -2,7 +2,7 @@ package com.carRentalService;
 
 import java.util.ArrayList;
 
-public class AvailabilityReport {
+public class InventoryReport {
 
     static void printAvailableCarsStr(ArrayList<String> availableCars) { //overloading results in an error "both methods have same erasure"
         System.out.println("Available Cars:");
@@ -14,7 +14,15 @@ public class AvailabilityReport {
     static void printAvailableCarsCar(ArrayList<Car> availableCarsObjsArr) {
         System.out.println("Available Cars:");
         for (int i = 0; i < availableCarsObjsArr.size(); i++) {
-            System.out.println((i+1)+") "+ availableCarsObjsArr.get(i).getMake()); //must change to fit with object elements in the array
+            System.out.println((i+1)+") "+ availableCarsObjsArr.get(i).getMake());
         }
     }
+
+    static void printRentedCarsCar(ArrayList<Car> rentedCarsObjsArr) {
+        System.out.println("Currently Rented Cars:");
+        for (int i = 0; i < rentedCarsObjsArr.size(); i++) {
+            System.out.println((i+1)+") "+ rentedCarsObjsArr.get(i).getMake());
+        }
+    }
+
 }
