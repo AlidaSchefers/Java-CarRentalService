@@ -14,7 +14,7 @@ public class AvailabilityReport {
     static void printAvailableCarsCar(ArrayList<Car> availableCarsObjsArr) {
         System.out.println("Available Cars:");
         for (int i = 0; i < availableCarsObjsArr.size(); i++) {
-            System.out.println((i+1)+") "+ availableCarsObjsArr.get(i).getModel()); //must change to fit with object elements in the array
+            System.out.println((i+1)+") "+ availableCarsObjsArr.get(i).getMake()); //must change to fit with object elements in the array
         }
     }
 }
