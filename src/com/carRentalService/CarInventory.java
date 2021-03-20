@@ -8,7 +8,7 @@ public class CarInventory {
     static ArrayList<Car> carInventoryArr = new ArrayList<Car>();
 
     static public void initializeCarInventory() {
-        Car car001 = new Car("car001","Honda", false);
+        Car car001 = new Car("car001","Honda", true);
         carInventoryArr.add(car001);
 
         Car car002 = new Car("car002","Chevy", true);
