@@ -32,7 +32,6 @@ public class Console {
         while (true) {
             System.out.print(prompt);
             Scanner scanner = new Scanner(System.in);
-//            try{
             String rentersName = scanner.nextLine();
             //with the index get the carID from the rentedArray to find the corresponding CarInventoryArr index for the car. THEN see if the renters name matches.
             String selectedCarsID = rentedCarsObjsArr.get(selectedCarByte - 1).getCarID();
@@ -46,10 +45,8 @@ public class Console {
                 CarInventory.getCarInventory().get(indexOfCarInCarInventory).setRenter("");
                 break;
             } else {
-                System.out.println("Invalid input. Please try again.");
+                System.out.println("Invalid input. Please try again, or you can go back to the home screen by typing \"go back\".");
             }
-//            System.out.println("car in objsarr: " + selectedCarsID);
-//            System.out.println("car in inventory: " + CarInventory.getCarInventory().get(indexOfCarInCarInventory).getCarID());
         }
     }
 
